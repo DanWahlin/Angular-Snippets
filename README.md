@@ -19,5 +19,12 @@ a2subscribe   - Observable subscribe snippet
 
 ## Installing the Angular 2 TypeScript Snippets
 
-To install the snippets extension view the following [walk-through](https://code.visualstudio.com/docs/editor/extension-gallery).
+```
+Windows:  Select Ctrl+P and then type ext install angular2-snippets
+Mac:      Select ⌘+P and then type ext install angular2-snippets 
+```
+
+After restarting the editor open a TypeScript file and type the `a2` prefix to see the snippets.
+
+The following [walk-through](https://code.visualstudio.com/docs/editor/extension-gallery) provides additional details.
 
