@@ -1,0 +1,27 @@
+{
+    "name": "angular2-snippets",
+    "author": "Dan Wahlin",
+    "publisher": "danwahlin",
+    "displayName": "Angular 2 Snippets",
+    "description": "Angular 2 Snippets for VS Code",
+    "icon": "images/angular2.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/danwahlin/angular2-snippets.git"
+    },
+    "galleryBanner": {
+        "color": "#0150B1",
+        "theme": "dark"
+    },
+    "version": "0.10.0",
+    "engines": { "vscode": "0.10.x" },
+    "categories": ["Snippets"],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "typescript",
+                "path": "./snippets/typescript.json"
+            }
+        ]
+    }
+}

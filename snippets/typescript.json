@@ -1,0 +1,122 @@
+{
+  "Bootstrap": {
+    "prefix": "a2bootstrap",
+    "body": [
+      "import { bootstrap } from 'angular2/platform/browser';",
+      "import { bind, enableProdMode, provide } from 'angular2/core';",
+      "import { FORM_PROVIDERS } from 'angular2/common';",
+      "import { ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy } from 'angular2/router';",
+      "import { HTTP_PROVIDERS } from 'angular2/http';",
+      "import { ${componentName}Component } from './${path}/${fileName}.component'",
+      "",
+      "//enableProdMode(); //Uncomment for production",
+      "",
+      "bootstrap(${componentName}Component, [ ",
+      "\tFORM_PROVIDERS, ",
+      "\tROUTER_PROVIDERS, ",
+      "\tHTTP_PROVIDERS, ",
+      "\tbind(LocationStrategy).toClass(HashLocationStrategy)",
+      "]).then(",
+      "\tsuccess => console.log('${componentName}Component bootstrapped!'),",
+      "\terror => console.log(error)",
+      ");"
+    ],
+    "description": "Angular 2 bootstrap snippet"
+  },
+  "Component": {
+    "prefix": "a2component",
+    "body": [
+      "import { Component, OnInit } from 'angular2/core';",
+      "",
+      "@Component({",
+      "\tselector: '${selector}',",
+      "\ttemplateUrl: '${path}/${fileName}.component.html'",
+      "})",
+      "",
+      "export class ${ComponentName}Component implements OnInit {",
+      "",
+      "\tconstructor($0) { }",
+      "",
+      "\tngOnInit() { ",
+      "",
+      "\t}",
+      "",
+      "}"
+    ],
+    "description": "Angular 2 component snippet"
+  }, 
+  "Service": {
+    "prefix": "a2service",
+    "body": [
+      "import { Injectable } from 'angular2/core';",
+      "",
+      "@Injectable()",
+      "export class ${ServiceName}Service {",
+      "\t$0",
+      "\tconstructor() { }",
+      "",
+      "}"
+    ],
+    "description": "Angular 2 service snippet"
+  },
+    "Pipe": {
+    "prefix": "a2pipe",
+    "body": [
+      "import { Pipe, PipeTransform } from 'angular2/core';",
+      "",
+      "@Pipe({",
+      "\tname: '${name}'",
+      "})",
+      "export class ${PipeName}Pipe implements PipeTransform {",
+      "",
+      "\ttransform(value: ${valueType}, args: ${argsType}) {",
+      "\t\t$0",
+      "\t}",
+      "",
+      "}"
+    ],
+    "description": "Angular 2 pipe snippet"
+  },
+  "RouteConfig": {
+    "prefix": "a2routeConfig",
+    "body": [
+      "@RouteConfig([",
+      "\t{ path: '/${routePath}', as: '${RouteName}', component: ${Component} },",
+      "\t{ path: '/${routePath2}/:${routeParameter}', as: '${RouteName2}', component: ${Component2} }",
+      "])"
+    ],
+    "description": "Angular 2 route config snippet"
+  },
+  "HttpImport": {
+    "prefix": "a2httpImport",
+    "body": [
+      "import { Http, Response } from 'angular2/http';"
+    ],
+    "description": "Angular 2 Http module import snippet"
+  },
+  "HttpMap": {
+    "prefix": "a2httpMap",
+    "body": [
+      "//ensure imports are included",
+      "//import { Http, Response } from 'angular2/http';",
+      "//import 'rxjs/add/operator/map';",
+      "",
+      "\t\treturn this.http.${function}(${url})",
+      "\t\t\t.map((res: Response) => {",
+      "\t\t\t\treturn res.json();",
+      "\t\t\t})",
+      "\t\t\t.catch(this.${errorFunction});"
+    ],
+    "description": "Angular 2 Http map snippet"
+  },
+  "Subscribe": {
+    "prefix": "a2subscribe",
+    "body": [
+      "\t\tthis.${serviceName}.${functionName}",
+      "\t\t\t.subscribe((${paramName}: ${paramType}) => {",
+      "\t\t\t\t$0",
+      "\t\t});"
+    ],
+    "description": "Angular 2 observable subscribe snippet"
+  }
+}
