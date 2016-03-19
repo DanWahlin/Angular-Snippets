@@ -1,0 +1,79 @@
+{
+  "ngFor": {
+    "prefix": "a2ngFor",
+    "body": [
+      "*ngFor=\"#${item} of ${list}\""
+    ],
+    "description": "Angular 2 *ngFor snippet"
+  },
+  
+  "ngIf": {
+    "prefix": "a2ngIf",
+    "body": [
+      "*ngIf=\"${expression}\""
+    ],
+    "description": "Angular 2 *ngIf snippet"
+  },
+  
+  "ngSwitch": {
+    "prefix": "a2ngSwitch",
+    "body": [
+      "<div [ngSwitch]=\"${conditionExpression}\">",
+      "\t<div *ngSwitchWhen=\"${expression}\">${output}</div>",
+      "\t<div *ngSwitchDefault>${output2}</div>",
+      "</div>"
+    ],
+    "description": "Angular 2 [ngSwitch] snippet"
+  },
+  
+  "ngClass": {
+    "prefix": "a2ngClass",
+    "body": [
+      "[ngClass]=\"{${cssClass}: ${expression}}\""
+    ],
+    "description": "Angular 2 [ngClass] snippet"
+  },
+  
+  "class": {
+    "prefix": "a2classBinding",
+    "body": [
+      "[class]=\"${expression}\""
+    ],
+    "description": "Angular 2 [class] binding snippet"
+  },
+  
+  "style": {
+    "prefix": "a2styleBinding",
+    "body": [
+      "[style]=\"${expression}\""
+    ],
+    "description": "Angular 2 [style] binding snippet"
+  },
+  
+  "ngStyle": {
+    "prefix": "a2ngStyle",
+    "body": [
+      "[ngStyle]=\"{${style}: ${expression}}\""
+    ],
+    "description": "Angular 2 [ngStyle] snippet"
+  },
+  
+  "ngModel": {
+    "prefix": "a2ngModel",
+    "body": [
+      "[(ngModel)]=\"${binding}\""
+    ],
+    "description": "Angular 2 [(ngModel)] snippet"
+  },
+  
+  "ngForm": {
+    "prefix": "a2ngForm",
+    "body": [
+      "<form #${templateVariableName}=\"ngForm\" (ngSubmit)=\"${functionName}\">",
+      "\t$0",
+      "</form>"
+    ],
+    "description": "Angular 2 ngForm snippet"
+  }
+}
+

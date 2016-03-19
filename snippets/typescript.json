@@ -23,6 +23,7 @@
     ],
     "description": "Angular 2 bootstrap snippet"
   },
+  
   "Component": {
     "prefix": "a2component",
     "body": [
@@ -45,6 +46,7 @@
     ],
     "description": "Angular 2 component snippet"
   }, 
+  
   "Service": {
     "prefix": "a2service",
     "body": [
@@ -59,6 +61,7 @@
     ],
     "description": "Angular 2 service snippet"
   },
+  
     "Pipe": {
     "prefix": "a2pipe",
     "body": [
@@ -77,6 +80,7 @@
     ],
     "description": "Angular 2 pipe snippet"
   },
+  
   "RouteConfig": {
     "prefix": "a2routeConfig",
     "body": [
@@ -87,6 +91,7 @@
     ],
     "description": "Angular 2 route config snippet"
   },
+  
   "HttpImport": {
     "prefix": "a2httpImport",
     "body": [
@@ -94,6 +99,7 @@
     ],
     "description": "Angular 2 Http module import snippet"
   },
+  
   "HttpMap": {
     "prefix": "a2httpMap",
     "body": [
@@ -109,6 +115,7 @@
     ],
     "description": "Angular 2 Http map snippet"
   },
+  
   "Subscribe": {
     "prefix": "a2subscribe",
     "body": [
@@ -118,5 +125,29 @@
       "\t\t});"
     ],
     "description": "Angular 2 observable subscribe snippet"
+  },
+  
+  "Input": {
+    "prefix": "a2inputProperty",
+    "body": [
+      "@Input() ${propertyName}: ${propertyType};"
+    ],
+    "description": "Angular 2 @Input property snippet"
+  },
+  
+  "Output": {
+    "prefix": "a2outputEvent",
+    "body": [
+      "@Output() ${eventName}: EventEmitter<${eventDataType}> = new EventEmitter();"
+    ],
+    "description": "Angular 2 @Output event snippet"
+  },
+  
+  "ProvideUseClass": {
+    "prefix": "a2provideUseClass",
+    "body": [
+      "provide(${service}, {useClass: ${otherService}})"
+    ],
+    "description": "Angular 2 provide() useClass snippet"
   }
 }
