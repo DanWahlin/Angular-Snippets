@@ -74,6 +74,16 @@
       "</form>"
     ],
     "description": "Angular 2 ngForm snippet"
+  },
+  
+  "ngSelect": {
+    "prefix": "a2select",
+    "body": [
+      "<select (change)=\"${changeFunction}($event)\">",
+      "\t<option *ngFor=\"#${item} of ${list}\" [value]=\"${item}\" [selected]=\"${selectFunction}(${item})\">{{${item}}}</option>",
+      "</select>"
+    ],
+    "description": "Angular 2 <select> control using *ngFor snippet"
   }
 }
 

@@ -34,6 +34,7 @@ a2ngIf            - *ngIf snippet
 a2ngModel         - [(ngModel)] binding snippet
 a2ngSwitch        - [ngSwitch] snippet
 a2ngStyle         - [ngStyle] snippet
+a2select          - <select> control using *ngFor snipppet
 a2styleBinding    - [style] binding snippet
 
 ```
