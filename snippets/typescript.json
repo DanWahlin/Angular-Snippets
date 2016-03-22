@@ -33,7 +33,6 @@
       "\tselector: '${selector}',",
       "\ttemplateUrl: '${path}/${fileName}.component.html'",
       "})",
-      "",
       "export class ${ComponentName}Component implements OnInit {",
       "",
       "\tconstructor($0) { }",
@@ -62,7 +61,7 @@
     "description": "Angular 2 service snippet"
   },
   
-    "Pipe": {
+  "Pipe": {
     "prefix": "a2pipe",
     "body": [
       "import { Pipe, PipeTransform } from 'angular2/core';",
@@ -85,11 +84,18 @@
     "prefix": "a2routeConfig",
     "body": [
       "@RouteConfig([",
-      "\t{ path: '/${routePath}', as: '${RouteName}', component: ${Component} },",
-      "\t{ path: '/${routePath2}/:${routeParameter}', as: '${RouteName2}', component: ${Component2} }",
+      "\t{ path: '/${routePath}', as: '${RouteName}', component: ${Component} }$0",
       "])"
     ],
     "description": "Angular 2 route config snippet"
+  },
+  
+  "Route": {
+    "prefix": "a2route",
+    "body": [
+      "{ path: '/${routePath}', as: '${RouteName}', component: ${Component} }$0"
+    ],
+    "description": "Angular 2 route definition snippet"
   },
   
   "HttpImport": {

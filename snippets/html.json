@@ -84,6 +84,22 @@
       "</select>"
     ],
     "description": "Angular 2 <select> control using *ngFor snippet"
+  },
+  
+  "ngRouterLink": {
+    "prefix": "a2routerLink",
+    "body": [
+      "[routerLink]=\"['${routeName}']\""
+    ],
+    "description": "Angular 2 basic [routerLink] snippet"
+  },
+  
+  "ngRouterLinkWithParameter": {
+    "prefix": "a2routerLinkWithParameter",
+    "body": [
+      "[routerLink]=\"['${routeName}',{${routeParameterName}:${routeParameterValue}$0}]\""
+    ],
+    "description": "Angular 2 [routerLink] with a route parameter snippet"
   }
 }
 
