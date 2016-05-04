@@ -88,7 +88,7 @@
       "\t{ path: '/${routePath}', component: ${Component} }$0",
       "])"
     ],
-    "description": "Angular 2 route configuration snippet (import Routes from @angular/router to use)"
+    "description": "Angular 2 routes snippet (import Routes from @angular/router to use)"
   },
   
   "Route": {

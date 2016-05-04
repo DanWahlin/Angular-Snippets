@@ -16,7 +16,7 @@ a2httpMap         - Http map() snippet
 a2inputProperty   - @Input property snippet
 a2outputEvent     - @Output event snippet
 a2pipe            - Pipe snippet
-a2routeConfig     - @RouteConfig snippet
+a2routes          - @Routes snippet
 a2route           - Route definition snippet
 a2service         - Service snippet
 a2subscribe       - Observable subscribe snippet
