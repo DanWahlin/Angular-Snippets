@@ -3,10 +3,11 @@
     "prefix": "a2bootstrap",
     "body": [
       "import { bootstrap } from '@angular/platform-browser-dynamic';",
-      "import { bind, enableProdMode, provide } from '@angular/core';",
+      "import { bind, enableProdMode } from '@angular/core';",
       "import { FORM_PROVIDERS, LocationStrategy, HashLocationStrategy } from '@angular/common';",
       "import { ROUTER_PROVIDERS } from '@angular/router';",
       "import { HTTP_PROVIDERS } from '@angular/http';",
+      "",
       "import { ${componentName}Component } from './${path}/${fileName}.component'",
       "",
       "//enableProdMode(); //Uncomment for production",
@@ -81,19 +82,19 @@
   },
   
   "RouteConfig": {
-    "prefix": "a2routeConfig",
+    "prefix": "a2routes",
     "body": [
-      "@RouteConfig([",
-      "\t{ path: '/${routePath}', as: '${RouteName}', component: ${Component} }$0",
+      "@Route([",
+      "\t{ path: '/${routePath}', component: ${Component} }$0",
       "])"
     ],
-    "description": "Angular 2 route config snippet (import RouteConfig from @angular/router to use)"
+    "description": "Angular 2 route configuration snippet (import Routes from @angular/router to use)"
   },
   
   "Route": {
     "prefix": "a2route",
     "body": [
-      "{ path: '/${routePath}', as: '${RouteName}', component: ${Component} }$0"
+      "{ path: '/${routePath}', component: ${Component} }$0"
     ],
     "description": "Angular 2 route definition snippet"
   },

@@ -45,7 +45,7 @@
   "style": {
     "prefix": "a2styleBinding",
     "body": [
-      "[style]=\"${expression}\""
+      "[style.${property}]=\"${expression}\""
     ],
     "description": "Angular 2 [style] binding snippet"
   },
@@ -97,7 +97,7 @@
   "ngRouterLinkWithParameter": {
     "prefix": "a2routerLinkWithParameter",
     "body": [
-      "[routerLink]=\"['${routeName}',{${routeParameterName}:${routeParameterValue}$0}]\""
+      "[routerLink]=\"['${routePath}',${routeParameterValue}$0]\""
     ],
     "description": "Angular 2 [routerLink] with a route parameter snippet"
   }
