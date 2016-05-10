@@ -3,21 +3,13 @@
     "prefix": "a2bootstrap",
     "body": [
       "import { bootstrap } from '@angular/platform-browser-dynamic';",
-      "import { bind, enableProdMode } from '@angular/core';",
-      "import { FORM_PROVIDERS, LocationStrategy, HashLocationStrategy } from '@angular/common';",
-      "import { ROUTER_PROVIDERS } from '@angular/router';",
-      "import { HTTP_PROVIDERS } from '@angular/http';",
+      "import { enableProdMode } from '@angular/core';",
       "",
       "import { ${componentName}Component } from './${path}/${fileName}.component'",
       "",
       "//enableProdMode(); //Uncomment for production",
       "",
-      "bootstrap(${componentName}Component, [ ",
-      "\tFORM_PROVIDERS, ",
-      "\tROUTER_PROVIDERS, ",
-      "\tHTTP_PROVIDERS, ",
-      "\t//Optional: bind(LocationStrategy).toClass(HashLocationStrategy)",
-      "]).then(",
+      "bootstrap(${componentName}Component).then(",
       "\tsuccess => console.log('${componentName}Component bootstrapped!'),",
       "\terror => console.log(error)",
       ");"
@@ -31,8 +23,9 @@
       "import { Component, OnInit } from '@angular/core';",
       "",
       "@Component({",
+      "\tmoduleId: module.id",
       "\tselector: '${selector}',",
-      "\ttemplateUrl: '${path}/${fileName}.component.html'",
+      "\ttemplateUrl: '${fileName}.component.html'",
       "})",
       "export class ${ComponentName}Component implements OnInit {",
       "",
@@ -84,7 +77,7 @@
   "RouteConfig": {
     "prefix": "a2routes",
     "body": [
-      "@Route([",
+      "@Routes([",
       "\t{ path: '/${routePath}', component: ${Component} }$0",
       "])"
     ],
