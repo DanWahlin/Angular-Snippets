@@ -12,7 +12,7 @@
         "color": "#0150B1",
         "theme": "dark"
     },
-    "version": "0.10.7",
+    "version": "0.10.8",
     "engines": { "vscode": "1.0.x" },
     "categories": ["Snippets"],
     "contributes": {
