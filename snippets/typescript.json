@@ -74,7 +74,7 @@
     "description": "Angular 2 pipe snippet"
   },
   
-  "RouteConfig": {
+  "Routes": {
     "prefix": "a2routes",
     "body": [
       "@Routes([",
