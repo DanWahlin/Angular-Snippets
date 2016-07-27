@@ -23,6 +23,7 @@
       "import { Component, OnInit } from '@angular/core';",
       "",
       "@Component({",
+      "\tmoduleId: module.id,",
       "\tselector: '${selector}',",
       "\ttemplateUrl: '${fileName}.component.html'",
       "})",
@@ -76,11 +77,17 @@
   "Routes": {
     "prefix": "a2routes",
     "body": [
-      "@Routes([",
+      "import { provideRouter, RouterConfig } from '@angular2/router'",
+      "",
+      "const APP_ROUTES: RouterConfig = [",
       "\t{ path: '/${routePath}', component: ${Component} }$0",
-      "])"
+      "];",
+      "",
+      "export const APP_ROUTER_PROVIDERS = [",
+      "\tprovideRouter(APP_ROUTES)",
+      "];"
     ],
-    "description": "Angular 2 routes snippet (import Routes from @angular/router to use)"
+    "description": "Angular 2 routes snippet"
   },
   
   "Route": {
