@@ -80,20 +80,20 @@
       "import { provideRouter, RouterConfig } from '@angular2/router'",
       "",
       "const APP_ROUTES: RouterConfig = [",
-      "\t{ path: '/${routePath}', component: ${Component} }$0",
+      "\t{ path: '${routePath}', component: ${Component} }$0",
       "];",
       "",
       "export const APP_ROUTER_PROVIDERS = [",
       "\tprovideRouter(APP_ROUTES)",
       "];"
     ],
-    "description": "Angular 2 routes snippet"
+    "description": "Angular 2 routes snippet with provideRouter()"
   },
   
   "Route": {
     "prefix": "a2route",
     "body": [
-      "{ path: '/${routePath}', component: ${Component} }$0"
+      "{ path: '${routePath}', component: ${Component} }$0"
     ],
     "description": "Angular 2 route definition snippet"
   },
