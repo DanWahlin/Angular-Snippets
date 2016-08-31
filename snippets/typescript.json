@@ -30,7 +30,7 @@
   },
 
   "Routes": {
-    "prefix": "a2rootRoutes",
+    "prefix": "a2routes",
     "body": [
       "import { RouterModule, Routes } from '@angular/router';",
       "",
@@ -42,6 +42,14 @@
       "export const app_routing = RouterModule.forRoot(app_routes);"
     ],
     "description": "Angular 2 root routes snippet"
+  },
+
+  "Route": {
+    "prefix": "a2route",
+    "body": [
+      "{ path: '${routePath}', component: ${Component} }$0"
+    ],
+    "description": "Angular 2 route definition snippet"
   },
   
   "Component": {

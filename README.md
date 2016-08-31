@@ -21,7 +21,6 @@ a2routes          - Angular 2 routes snippet
 a2route           - Route definition snippet
 a2service         - Service snippet
 a2subscribe       - Observable subscribe snippet
-a2provideUseClass - provide() with useClass
 
 ```
 
