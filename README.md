@@ -10,6 +10,7 @@ Type one of the snippet names below (or part of it) and then press return.
 
 ```
 a2bootstrap       - Bootstrap snippet
+a2appModule       - Create the root app module (@NgModule)
 a2component       - Component snippet
 a2httpImport      - Http module import snippet
 a2httpMap         - Http map() snippet

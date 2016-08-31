@@ -91,7 +91,7 @@
     "body": [
       "[routerLink]=\"['${routeName}']\""
     ],
-    "description": "Angular 2 basic [routerLink] snippet"
+    "description": "Angular 2 basic routerLink snippet"
   },
   
   "ngRouterLinkWithParameter": {
@@ -99,7 +99,7 @@
     "body": [
       "[routerLink]=\"['${routePath}',${routeParameterValue}$0]\""
     ],
-    "description": "Angular 2 [routerLink] with a route parameter snippet"
+    "description": "Angular 2 routerLink with a route parameter snippet"
   }
 }
 

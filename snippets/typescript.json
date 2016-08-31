@@ -2,19 +2,46 @@
   "Bootstrap": {
     "prefix": "a2bootstrap",
     "body": [
-      "import { bootstrap } from '@angular/platform-browser-dynamic';",
+      "import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';",
       "import { enableProdMode } from '@angular/core';",
-      "",
-      "import { ${componentName}Component } from './${path}/${fileName}.component'",
+      "import { ${appModuleName} } from './${path}/${fileName}.component';",
       "",
       "//enableProdMode(); //Uncomment for production",
-      "",
-      "bootstrap(${componentName}Component).then(",
-      "\tsuccess => console.log('${componentName}Component bootstrapped!'),",
-      "\terror => console.log(error)",
-      ");"
+      "platformBrowserDynamic().bootstrapModule((${appModuleName});"
     ],
-    "description": "Angular 2 bootstrap snippet"
+    "description": "Angular 2 bootstrap app module using platformBrowserDynamic snippet"
+  },
+
+  "AppModule": {
+    "prefix": "a2appModule",
+    "body": [
+      "import { NgModule } from '@angular/core';",
+      "import { BrowserModule } from '@angular/platform-browser';",
+      "import { ${appComponentName} } from './${path}/${fileName}.component';",
+      "$0",
+      "@NgModule({",
+      "\timports: [ BrowserModule ],",
+      "\tdeclarations: [ ${appComponentName} ],",
+      "\tbootstrap:    [ ${appComponentName} ]",
+      "})",
+      "export class AppModule { }"
+    ],
+    "description": "Angular 2 root app module (@NgModule) snippet"
+  },
+
+  "Routes": {
+    "prefix": "a2rootRoutes",
+    "body": [
+      "import { RouterModule, Routes } from '@angular/router';",
+      "",
+      "const app_routes: Routes = [",
+      "\t{ path: '${routePath}', component: ${Component} },$0",
+      "\t{ path: '**', pathMatch:'full', redirectTo: '${routePath}' }",
+      "];",
+      "",
+      "export const app_routing = RouterModule.forRoot(app_routes);"
+    ],
+    "description": "Angular 2 root routes snippet"
   },
   
   "Component": {
@@ -28,8 +55,8 @@
       "\ttemplateUrl: '${fileName}.component.html'",
       "})",
       "export class ${ComponentName}Component implements OnInit {",
-      "",
-      "\tconstructor($0) { }",
+      "$0",
+      "\tconstructor() { }",
       "",
       "\tngOnInit() { ",
       "",
@@ -72,30 +99,6 @@
       "}"
     ],
     "description": "Angular 2 pipe snippet"
-  },
-  
-  "Routes": {
-    "prefix": "a2routes",
-    "body": [
-      "import { provideRouter, RouterConfig } from '@angular/router';",
-      "",
-      "const APP_ROUTES: RouterConfig = [",
-      "\t{ path: '${routePath}', component: ${Component} }$0",
-      "];",
-      "",
-      "export const APP_ROUTER_PROVIDERS = [",
-      "\tprovideRouter(APP_ROUTES)",
-      "];"
-    ],
-    "description": "Angular 2 routes snippet with provideRouter()"
-  },
-  
-  "Route": {
-    "prefix": "a2route",
-    "body": [
-      "{ path: '${routePath}', component: ${Component} }$0"
-    ],
-    "description": "Angular 2 route definition snippet"
   },
   
   "HttpImport": {
@@ -147,13 +150,6 @@
       "@Output() ${eventName}: EventEmitter<${eventDataType}> = new EventEmitter();"
     ],
     "description": "Angular 2 @Output event snippet (import Output and EventEmitter from @angular/core to use)"
-  },
-  
-  "ProvideUseClass": {
-    "prefix": "a2provideUseClass",
-    "body": [
-      "provide(${service}, {useClass: ${otherService}})"
-    ],
-    "description": "Angular 2 provide() useClass snippet (import provide from @angular/core to use)"
   }
+
 }
