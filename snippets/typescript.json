@@ -34,12 +34,12 @@
     "body": [
       "import { RouterModule, Routes } from '@angular/router';",
       "",
-      "const app_routes: Routes = [",
+      "const routes: Routes = [",
       "\t{ path: '${routePath}', component: ${Component} },$0",
       "\t{ path: '**', pathMatch:'full', redirectTo: '${routePath}' }",
       "];",
       "",
-      "export const app_routing = RouterModule.forRoot(app_routes);"
+      "export const appRouting = RouterModule.forRoot(routes);"
     ],
     "description": "Angular 2 root routes snippet"
   },
@@ -88,6 +88,26 @@
       "}"
     ],
     "description": "Angular 2 service snippet"
+  },
+
+  "HttpService": {
+    "prefix": "a2httpService",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { Http, Response } from '@angular/http';",
+      "",
+      "import { Observable } from 'rxjs/Observable';",
+      "import 'rxjs/add/operator/map';",
+      "import 'rxjs/add/operator/catch';",
+      "",
+      "@Injectable()",
+      "export class ${ServiceName}Service {",
+      "\t$0",
+      "\tconstructor(private http: Http) { }",
+      "",
+      "}"
+    ],
+    "description": "Angular 2 Http service snippet"
   },
   
   "Pipe": {
@@ -155,7 +175,7 @@
   "Output": {
     "prefix": "a2outputEvent",
     "body": [
-      "@Output() ${eventName}: EventEmitter<${eventDataType}> = new EventEmitter();"
+      "@Output() ${eventName}: EventEmitter<${eventDataType}> = new EventEmitter<${eventDataType}>();"
     ],
     "description": "Angular 2 @Output event snippet (import Output and EventEmitter from @angular/core to use)"
   }

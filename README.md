@@ -14,6 +14,7 @@ a2appModule       - Create the root app module (@NgModule)
 a2component       - Component snippet
 a2httpImport      - Http module import snippet
 a2httpMap         - Http map() snippet
+a2httpService     - Service with Http snippet
 a2inputProperty   - @Input property snippet
 a2outputEvent     - @Output event snippet
 a2pipe            - Pipe snippet
