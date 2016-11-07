@@ -35,8 +35,8 @@ a2ngFor                     - *ngFor snippet
 a2ngForm                    - ngForm snippet
 a2ngIf                      - *ngIf snippet
 a2ngModel                   - [(ngModel)] binding snippet
-a2routerLink                - basic [routerLink] snippet
-a2routerLinkWithParameter   - [routerLink] with router parameter snippet
+a2routerLink                - Basic routerLink snippet
+a2routerLinkWithParameter   - [routerLink] with route parameter snippet
 a2ngSwitch                  - [ngSwitch] snippet
 a2ngStyle                   - [ngStyle] snippet
 a2select                    - <select> control using *ngFor snipppet
