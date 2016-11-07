@@ -9,19 +9,20 @@ Type one of the snippet names below (or part of it) and then press return.
 ### TypeScript Snippets
 
 ```
-a2bootstrap       - Bootstrap snippet
-a2appModule       - Create the root app module (@NgModule)
-a2component       - Component snippet
-a2httpImport      - Http module import snippet
-a2httpMap         - Http map() snippet
-a2httpService     - Service with Http snippet
-a2inputProperty   - @Input property snippet
-a2outputEvent     - @Output event snippet
-a2pipe            - Pipe snippet
-a2routes          - Angular 2 routes snippet
-a2route           - Route definition snippet
-a2service         - Service snippet
-a2subscribe       - Observable subscribe snippet
+a2bootstrap                     - Bootstrap snippet
+a2appModule                     - Create the root app module (@NgModule)
+a2canDeactivateRoutingGuard     - Create a CanDeactivate routing guard
+a2component                     - Component snippet
+a2httpImport                    - Http module import snippet
+a2httpMap                       - Http map() snippet
+a2httpService                   - Service with Http snippet
+a2inputProperty                 - @Input property snippet
+a2outputEvent                   - @Output event snippet
+a2pipe                          - Pipe snippet
+a2routes                        - Angular 2 routes snippet
+a2route                         - Route definition snippet
+a2service                       - Service snippet
+a2subscribe                     - Observable subscribe snippet
 
 ```
 

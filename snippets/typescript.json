@@ -74,6 +74,30 @@
     ],
     "description": "Angular 2 component snippet"
   }, 
+  "CanDeactivateRoutingGuard": {
+    "prefix": "a2canDeactivateRoutingGuard",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { CanDeactivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
+      "import { Observable } from 'rxjs/Observable';",
+      "",
+      "import { ${ComponentToGuard} } from '${filePath}.component';",
+      "",
+      "@Injectable()",
+      "export class CanDeactivateGuard implements CanDeactivate<${ComponentToGuard}> {",
+      "",
+      "\tcanDeactivate(",
+      "\t\tcomponent: ${ComponentToGuard},",
+      "\t\troute: ActivatedRouteSnapshot,",
+      "\t\tstate: RouterStateSnapshot",
+      "\t) : Observable<boolean> | Promise<boolean> | boolean {",
+      "\t\t$0",
+      "\t}",
+      "",
+      "}"
+    ],
+    "description": "Angular 2 CanDeactivate Routing Guard"
+  }, 
   
   "Service": {
     "prefix": "a2service",

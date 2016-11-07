@@ -89,7 +89,7 @@
   "ngRouterLink": {
     "prefix": "a2routerLink",
     "body": [
-      "[routerLink]=\"['${routeName}']\""
+      "routerLink=\"${routeName}\""
     ],
     "description": "Angular 2 basic routerLink snippet"
   },
