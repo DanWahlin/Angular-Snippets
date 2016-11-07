@@ -12,8 +12,8 @@
         "color": "#0150B1",
         "theme": "dark"
     },
-    "version": "1.0.2",
-    "engines": { "vscode": "1.0.x" },
+    "version": "1.0.3",
+    "engines": { "vscode": "0.10.x" },
     "categories": ["Snippets"],
     "contributes": {
         "snippets": [
