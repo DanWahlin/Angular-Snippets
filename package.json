@@ -1,7 +1,7 @@
 {
     "name": "angular2-snippets",
     "publisher": "danwahlin",
-    "displayName": "Angular 2 Snippets",
+    "displayName": "Angular 2 TypeScript/HTML Snippets",
     "description": "Angular 2 TypeScript and HTML Snippets for VS Code",
     "icon": "images/angular2.png",
     "repository": {
