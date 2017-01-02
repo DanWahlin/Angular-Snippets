@@ -51,10 +51,10 @@
       "import { NgModule } from '@angular/core';",
       "import { RouterModule, Routes } from '@angular/router';",
       "",
-      "import { ${featureComponentName} } from './${path}/${fileName}.component';",
+      "import { ${featureName}Component } from './${path}/${fileName}.component';",
       "",
       "const routes: Routes = ",
-      "\t{ path: '${routePath}', component: ${featureComponentName} }$0",
+      "\t{ path: '${routePath}', component: ${featureName}Component }$0",
       "];",
       "",
       "@NgModule({",
@@ -62,7 +62,7 @@
       "\tdeclarations: [ RouterModule ]",
       "})",
       "export class ${featureName}RoutingModule {",
-      "\tstatic components = [ ${featureComponentName} ]",
+      "\tstatic components = [ ${featureName}Component ]",
       "}"
     ],
     "description": "Angular app feature routing module (@NgModule with RouterModule import) snippet"
