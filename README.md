@@ -49,8 +49,8 @@ aStyleBinding              - [style] binding snippet
 ## Installing the Angular TypeScript and HTML Snippets
 
 ```
-Windows:  Select Ctrl+P and then type ext install angular-typescript-snippets
-Mac:      Select ⌘+P and then type ext install angular-typescript-snippets 
+Windows:  Select Ctrl+P and then type ext install angular2-snippets
+Mac:      Select ⌘+P and then type ext install angular2-snippets 
 ```
 
 After restarting the editor open a TypeScript file and type the `a` prefix to see the snippets.
