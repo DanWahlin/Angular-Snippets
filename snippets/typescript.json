@@ -1,6 +1,6 @@
 {
   "Bootstrap": {
-    "prefix": "aBootstrap",
+    "prefix": "a2Bootstrap",
     "body": [
       "import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';",
       "import { enableProdMode } from '@angular/core';",
@@ -13,7 +13,7 @@
   },
 
   "AppModule": {
-    "prefix": "aAppModule",
+    "prefix": "a2AppModule",
     "body": [
       "import { NgModule } from '@angular/core';",
       "import { BrowserModule } from '@angular/platform-browser';",
@@ -30,7 +30,7 @@
   },
 
   "AppFeatureModule": {
-    "prefix": "aAppFeatureModule",
+    "prefix": "a2AppFeatureModule",
     "body": [
       "import { NgModule } from '@angular/core';",
       "",
@@ -46,7 +46,7 @@
   },
 
   "AppFeatureRoutingModule": {
-    "prefix": "aAppFeatureRoutingModule",
+    "prefix": "a2AppFeatureRoutingModule",
     "body": [
       "import { NgModule } from '@angular/core';",
       "import { RouterModule, Routes } from '@angular/router';",
@@ -69,7 +69,7 @@
   },
 
   "Routes": {
-    "prefix": "aRoutes",
+    "prefix": "a2Routes",
     "body": [
       "import { RouterModule, Routes } from '@angular/router';",
       "",
@@ -84,7 +84,7 @@
   },
 
   "Route": {
-    "prefix": "aRoute",
+    "prefix": "a2Route",
     "body": [
       "{ path: '${routePath}', component: ${Component} }$0"
     ],
@@ -92,7 +92,7 @@
   },
   
   "Component": {
-    "prefix": "aComponent",
+    "prefix": "a2Component",
     "body": [
       "import { Component, OnInit } from '@angular/core';",
       "",
@@ -114,7 +114,7 @@
     "description": "Angular component snippet"
   }, 
   "CanDeactivateRoutingGuard": {
-    "prefix": "aCanDeactivateRoutingGuard",
+    "prefix": "a2CanDeactivateRoutingGuard",
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { CanDeactivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
@@ -139,7 +139,7 @@
   }, 
   
   "Service": {
-    "prefix": "aService",
+    "prefix": "a2Service",
     "body": [
       "import { Injectable } from '@angular/core';",
       "",
@@ -154,7 +154,7 @@
   },
 
   "HttpService": {
-    "prefix": "aHttpService",
+    "prefix": "a2HttpService",
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { Http, Response } from '@angular/http';",
@@ -174,7 +174,7 @@
   },
   
   "Pipe": {
-    "prefix": "aPipe",
+    "prefix": "a2Pipe",
     "body": [
       "import { Pipe, PipeTransform } from '@angular/core';",
       "",
@@ -193,7 +193,7 @@
   },
   
   "HttpImport": {
-    "prefix": "aHttpImport",
+    "prefix": "a2HttpImport",
     "body": [
       "import { Http, Response } from '@angular/http';"
     ],
@@ -201,7 +201,7 @@
   },
   
   "HttpMap": {
-    "prefix": "aHttpMap",
+    "prefix": "a2HttpMap",
     "body": [
       "\t\t//ensure imports are included",
       "\t\t//import { Http, Response } from '@angular/http';",
@@ -217,7 +217,7 @@
   },
   
   "Subscribe": {
-    "prefix": "aSubscribe",
+    "prefix": "a2Subscribe",
     "body": [
       "\t\tthis.${serviceName}.${functionName}",
       "\t\t\t.subscribe((${paramName}: ${paramType}) => {",
@@ -228,7 +228,7 @@
   },
   
   "Input": {
-    "prefix": "aInputProperty",
+    "prefix": "a2InputProperty",
     "body": [
       "@Input() ${propertyName}: ${propertyType};"
     ],
@@ -236,7 +236,7 @@
   },
   
   "Output": {
-    "prefix": "aOutputEvent",
+    "prefix": "a2OutputEvent",
     "body": [
       "@Output() ${eventName}: EventEmitter<${eventDataType}> = new EventEmitter<${eventDataType}>();"
     ],

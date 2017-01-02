@@ -1,6 +1,6 @@
 {
   "ngFor": {
-    "prefix": "aNgFor",
+    "prefix": "a2NgFor",
     "body": [
       "*ngFor=\"let ${item} of ${list}\""
     ],
@@ -8,7 +8,7 @@
   },
   
   "ngIf": {
-    "prefix": "aNgIf",
+    "prefix": "a2NgIf",
     "body": [
       "*ngIf=\"${expression}\""
     ],
@@ -16,7 +16,7 @@
   },
   
   "ngSwitch": {
-    "prefix": "aNgSwitch",
+    "prefix": "a2NgSwitch",
     "body": [
       "<div [ngSwitch]=\"${conditionExpression}\">",
       "\t<div *ngSwitchWhen=\"${expression}\">${output}</div>",
@@ -27,7 +27,7 @@
   },
   
   "ngClass": {
-    "prefix": "aNgClass",
+    "prefix": "a2NgClass",
     "body": [
       "[ngClass]=\"{${cssClass}: ${expression}}\""
     ],
@@ -35,7 +35,7 @@
   },
   
   "class": {
-    "prefix": "aClassBinding",
+    "prefix": "a2ClassBinding",
     "body": [
       "[class]=\"${expression}\""
     ],
@@ -43,7 +43,7 @@
   },
   
   "style": {
-    "prefix": "aStyleBinding",
+    "prefix": "a2StyleBinding",
     "body": [
       "[style.${property}]=\"${expression}\""
     ],
@@ -51,7 +51,7 @@
   },
   
   "ngStyle": {
-    "prefix": "aNgStyle",
+    "prefix": "a2NgStyle",
     "body": [
       "[ngStyle]=\"{${style}: ${expression}}\""
     ],
@@ -59,7 +59,7 @@
   },
   
   "ngModel": {
-    "prefix": "aNgModel",
+    "prefix": "a2NgModel",
     "body": [
       "[(ngModel)]=\"${binding}\""
     ],
@@ -67,7 +67,7 @@
   },
   
   "ngForm": {
-    "prefix": "aNgForm",
+    "prefix": "a2NgForm",
     "body": [
       "<form #${templateVariableName}=\"ngForm\" (ngSubmit)=\"${functionName}\">",
       "\t$0",
@@ -77,7 +77,7 @@
   },
   
   "ngSelect": {
-    "prefix": "aSelect",
+    "prefix": "a2Select",
     "body": [
       "<select (change)=\"${changeFunction}($event)\">",
       "\t<option *ngFor=\"let ${item} of ${list}\" [value]=\"${item}\" [selected]=\"${selectFunction}(${item})\">{{${item}}}</option>",
@@ -87,7 +87,7 @@
   },
   
   "ngRouterLink": {
-    "prefix": "aRouterLink",
+    "prefix": "a2RouterLink",
     "body": [
       "routerLink=\"${routeName}\""
     ],
@@ -95,7 +95,7 @@
   },
   
   "ngRouterLinkWithParameter": {
-    "prefix": "aRouterLinkWithParameter",
+    "prefix": "a2RouterLinkWithParameter",
     "body": [
       "[routerLink]=\"['${routePath}',${routeParameterValue}$0]\""
     ],
