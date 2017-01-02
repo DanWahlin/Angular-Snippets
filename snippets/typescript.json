@@ -1,6 +1,6 @@
 {
   "Bootstrap": {
-    "prefix": "a2bootstrap",
+    "prefix": "aBootstrap",
     "body": [
       "import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';",
       "import { enableProdMode } from '@angular/core';",
@@ -9,11 +9,11 @@
       "//enableProdMode(); //Uncomment for production",
       "platformBrowserDynamic().bootstrapModule((${appModuleName});"
     ],
-    "description": "Angular 2 bootstrap app module using platformBrowserDynamic snippet"
+    "description": "Angular bootstrap app module using platformBrowserDynamic snippet"
   },
 
   "AppModule": {
-    "prefix": "a2appModule",
+    "prefix": "aAppModule",
     "body": [
       "import { NgModule } from '@angular/core';",
       "import { BrowserModule } from '@angular/platform-browser';",
@@ -26,11 +26,50 @@
       "})",
       "export class AppModule { }"
     ],
-    "description": "Angular 2 root app module (@NgModule) snippet"
+    "description": "Angular root app module (@NgModule) snippet"
+  },
+
+  "AppFeatureModule": {
+    "prefix": "aAppFeatureModule",
+    "body": [
+      "import { NgModule } from '@angular/core';",
+      "",
+      "import { ${featureRoutingModuleName} } from './${path}/${fileName}.module';",
+      "",
+      "@NgModule({",
+      "\timports: [ ${featureRoutingModuleName} ],",
+      "\tdeclarations: [ ${featureRoutingModuleName}.components ],",
+      "})",
+      "export class ${featureName}Module { }"
+    ],
+    "description": "Angular app feature module (@NgModule) snippet"
+  },
+
+  "AppFeatureRoutingModule": {
+    "prefix": "aAppFeatureRoutingModule",
+    "body": [
+      "import { NgModule } from '@angular/core';",
+      "import { RouterModule, Routes } from '@angular/router';",
+      "",
+      "import { ${featureComponentName} } from './${path}/${fileName}.component';",
+      "",
+      "const routes: Routes = ",
+      "\t{ path: '${routePath}', component: ${featureComponentName} }$0",
+      "];",
+      "",
+      "@NgModule({",
+      "\timports: [ RouterModule.forChild(routes) ],",
+      "\tdeclarations: [ RouterModule ]",
+      "})",
+      "export class ${featureName}RoutingModule {",
+      "\tstatic components = [ ${featureComponentName} ]",
+      "}"
+    ],
+    "description": "Angular app feature routing module (@NgModule with RouterModule import) snippet"
   },
 
   "Routes": {
-    "prefix": "a2routes",
+    "prefix": "aRoutes",
     "body": [
       "import { RouterModule, Routes } from '@angular/router';",
       "",
@@ -41,19 +80,19 @@
       "",
       "export const appRouting = RouterModule.forRoot(routes);"
     ],
-    "description": "Angular 2 root routes snippet"
+    "description": "Angular root routes snippet"
   },
 
   "Route": {
-    "prefix": "a2route",
+    "prefix": "aRoute",
     "body": [
       "{ path: '${routePath}', component: ${Component} }$0"
     ],
-    "description": "Angular 2 route definition snippet"
+    "description": "Angular route definition snippet"
   },
   
   "Component": {
-    "prefix": "a2component",
+    "prefix": "aComponent",
     "body": [
       "import { Component, OnInit } from '@angular/core';",
       "",
@@ -72,10 +111,10 @@
       "",
       "}"
     ],
-    "description": "Angular 2 component snippet"
+    "description": "Angular component snippet"
   }, 
   "CanDeactivateRoutingGuard": {
-    "prefix": "a2canDeactivateRoutingGuard",
+    "prefix": "aCanDeactivateRoutingGuard",
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { CanDeactivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
@@ -96,11 +135,11 @@
       "",
       "}"
     ],
-    "description": "Angular 2 CanDeactivate Routing Guard"
+    "description": "Angular CanDeactivate Routing Guard"
   }, 
   
   "Service": {
-    "prefix": "a2service",
+    "prefix": "aService",
     "body": [
       "import { Injectable } from '@angular/core';",
       "",
@@ -111,11 +150,11 @@
       "",
       "}"
     ],
-    "description": "Angular 2 service snippet"
+    "description": "Angular service snippet"
   },
 
   "HttpService": {
-    "prefix": "a2httpService",
+    "prefix": "aHttpService",
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { Http, Response } from '@angular/http';",
@@ -131,11 +170,11 @@
       "",
       "}"
     ],
-    "description": "Angular 2 Http service snippet"
+    "description": "Angular Http service snippet"
   },
   
   "Pipe": {
-    "prefix": "a2pipe",
+    "prefix": "aPipe",
     "body": [
       "import { Pipe, PipeTransform } from '@angular/core';",
       "",
@@ -150,19 +189,19 @@
       "",
       "}"
     ],
-    "description": "Angular 2 pipe snippet"
+    "description": "Angular pipe snippet"
   },
   
   "HttpImport": {
-    "prefix": "a2httpImport",
+    "prefix": "aHttpImport",
     "body": [
       "import { Http, Response } from '@angular/http';"
     ],
-    "description": "Angular 2 Http module import snippet"
+    "description": "Angular Http module import snippet"
   },
   
   "HttpMap": {
-    "prefix": "a2httpMap",
+    "prefix": "aHttpMap",
     "body": [
       "\t\t//ensure imports are included",
       "\t\t//import { Http, Response } from '@angular/http';",
@@ -174,34 +213,34 @@
       "\t\t\t})",
       "\t\t\t.catch(this.${errorFunction});"
     ],
-    "description": "Angular 2 Http map snippet"
+    "description": "Angular Http map snippet"
   },
   
   "Subscribe": {
-    "prefix": "a2subscribe",
+    "prefix": "aSubscribe",
     "body": [
       "\t\tthis.${serviceName}.${functionName}",
       "\t\t\t.subscribe((${paramName}: ${paramType}) => {",
       "\t\t\t\t$0",
       "\t\t});"
     ],
-    "description": "Angular 2 observable subscribe snippet"
+    "description": "Angular observable subscribe snippet"
   },
   
   "Input": {
-    "prefix": "a2inputProperty",
+    "prefix": "aInputProperty",
     "body": [
       "@Input() ${propertyName}: ${propertyType};"
     ],
-    "description": "Angular 2 @Input property snippet (import Input from @angular/core to use)"
+    "description": "Angular @Input property snippet (import Input from @angular/core to use)"
   },
   
   "Output": {
-    "prefix": "a2outputEvent",
+    "prefix": "aOutputEvent",
     "body": [
       "@Output() ${eventName}: EventEmitter<${eventDataType}> = new EventEmitter<${eventDataType}>();"
     ],
-    "description": "Angular 2 @Output event snippet (import Output and EventEmitter from @angular/core to use)"
+    "description": "Angular @Output event snippet (import Output and EventEmitter from @angular/core to use)"
   }
 
 }

@@ -1,105 +1,105 @@
 {
   "ngFor": {
-    "prefix": "a2ngFor",
+    "prefix": "aNgFor",
     "body": [
       "*ngFor=\"let ${item} of ${list}\""
     ],
-    "description": "Angular 2 *ngFor snippet"
+    "description": "Angular *ngFor snippet"
   },
   
   "ngIf": {
-    "prefix": "a2ngIf",
+    "prefix": "aNgIf",
     "body": [
       "*ngIf=\"${expression}\""
     ],
-    "description": "Angular 2 *ngIf snippet"
+    "description": "Angular *ngIf snippet"
   },
   
   "ngSwitch": {
-    "prefix": "a2ngSwitch",
+    "prefix": "aNgSwitch",
     "body": [
       "<div [ngSwitch]=\"${conditionExpression}\">",
       "\t<div *ngSwitchWhen=\"${expression}\">${output}</div>",
       "\t<div *ngSwitchDefault>${output2}</div>",
       "</div>"
     ],
-    "description": "Angular 2 [ngSwitch] snippet"
+    "description": "Angular [ngSwitch] snippet"
   },
   
   "ngClass": {
-    "prefix": "a2ngClass",
+    "prefix": "aNgClass",
     "body": [
       "[ngClass]=\"{${cssClass}: ${expression}}\""
     ],
-    "description": "Angular 2 [ngClass] snippet"
+    "description": "Angular [ngClass] snippet"
   },
   
   "class": {
-    "prefix": "a2classBinding",
+    "prefix": "aClassBinding",
     "body": [
       "[class]=\"${expression}\""
     ],
-    "description": "Angular 2 [class] binding snippet"
+    "description": "Angular [class] binding snippet"
   },
   
   "style": {
-    "prefix": "a2styleBinding",
+    "prefix": "aStyleBinding",
     "body": [
       "[style.${property}]=\"${expression}\""
     ],
-    "description": "Angular 2 [style] binding snippet"
+    "description": "Angular [style] binding snippet"
   },
   
   "ngStyle": {
-    "prefix": "a2ngStyle",
+    "prefix": "aNgStyle",
     "body": [
       "[ngStyle]=\"{${style}: ${expression}}\""
     ],
-    "description": "Angular 2 [ngStyle] snippet"
+    "description": "Angular [ngStyle] snippet"
   },
   
   "ngModel": {
-    "prefix": "a2ngModel",
+    "prefix": "aNgModel",
     "body": [
       "[(ngModel)]=\"${binding}\""
     ],
-    "description": "Angular 2 [(ngModel)] snippet"
+    "description": "Angular [(ngModel)] snippet"
   },
   
   "ngForm": {
-    "prefix": "a2ngForm",
+    "prefix": "aNgForm",
     "body": [
       "<form #${templateVariableName}=\"ngForm\" (ngSubmit)=\"${functionName}\">",
       "\t$0",
       "</form>"
     ],
-    "description": "Angular 2 ngForm snippet"
+    "description": "Angular ngForm snippet"
   },
   
   "ngSelect": {
-    "prefix": "a2select",
+    "prefix": "aSelect",
     "body": [
       "<select (change)=\"${changeFunction}($event)\">",
       "\t<option *ngFor=\"let ${item} of ${list}\" [value]=\"${item}\" [selected]=\"${selectFunction}(${item})\">{{${item}}}</option>",
       "</select>"
     ],
-    "description": "Angular 2 <select> control using *ngFor snippet"
+    "description": "Angular <select> control using *ngFor snippet"
   },
   
   "ngRouterLink": {
-    "prefix": "a2routerLink",
+    "prefix": "aRouterLink",
     "body": [
       "routerLink=\"${routeName}\""
     ],
-    "description": "Angular 2 basic routerLink snippet"
+    "description": "Angular basic routerLink snippet"
   },
   
   "ngRouterLinkWithParameter": {
-    "prefix": "a2routerLinkWithParameter",
+    "prefix": "aRouterLinkWithParameter",
     "body": [
       "[routerLink]=\"['${routePath}',${routeParameterValue}$0]\""
     ],
-    "description": "Angular 2 routerLink with a route parameter snippet"
+    "description": "Angular routerLink with a route parameter snippet"
   }
 }
 

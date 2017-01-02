@@ -1,6 +1,6 @@
-# Angular 2 VS Code TypeScript and HTML Snippets 
+# Angular VS Code TypeScript and HTML Snippets 
 
-This VS Code extension adds Angular 2 TypeScript and HTML code snippets into your editor.
+This VS Code extension adds Angular (2 or higher) TypeScript and HTML code snippets into your editor.
 
 ## How To Use the Snippets
 
@@ -9,49 +9,51 @@ Type one of the snippet names below (or part of it) and then press return.
 ### TypeScript Snippets
 
 ```
-a2bootstrap                     - Bootstrap snippet
-a2appModule                     - Create the root app module (@NgModule)
-a2canDeactivateRoutingGuard     - Create a CanDeactivate routing guard
-a2component                     - Component snippet
-a2httpImport                    - Http module import snippet
-a2httpMap                       - Http map() snippet
-a2httpService                   - Service with Http snippet
-a2inputProperty                 - @Input property snippet
-a2outputEvent                   - @Output event snippet
-a2pipe                          - Pipe snippet
-a2routes                        - Angular 2 routes snippet
-a2route                         - Route definition snippet
-a2service                       - Service snippet
-a2subscribe                     - Observable subscribe snippet
+aBootstrap                     - Bootstrap snippet
+aAppModule                     - Create the root app module (@NgModule)
+aAppFeatureModule              - Angular app feature module (@NgModule) snippet
+aAppFeatureRoutingModule       - Angular app feature routing module (@NgModule) snippet
+aCanDeactivateRoutingGuard     - Create a CanDeactivate routing guard
+aComponent                     - Component snippet
+aHttpImport                    - Http module import snippet
+aHttpMap                       - Http map() snippet
+aHttpService                   - Service with Http snippet
+aInputProperty                 - @Input property snippet
+aOutputEvent                   - @Output event snippet
+aPipe                          - Pipe snippet
+aRoutes                        - Angular routes snippet
+aRoute                         - Route definition snippet
+aService                       - Service snippet
+aSubscribe                     - Observable subscribe snippet
 
 ```
 
 ### HTML Snippets
 
 ```
-a2classBinding              - [class] binding snippet
-a2ngClass                   - [ngClass] snippet
-a2ngFor                     - *ngFor snippet
-a2ngForm                    - ngForm snippet
-a2ngIf                      - *ngIf snippet
-a2ngModel                   - [(ngModel)] binding snippet
-a2routerLink                - Basic routerLink snippet
-a2routerLinkWithParameter   - [routerLink] with route parameter snippet
-a2ngSwitch                  - [ngSwitch] snippet
-a2ngStyle                   - [ngStyle] snippet
-a2select                    - <select> control using *ngFor snipppet
-a2styleBinding              - [style] binding snippet
+aClassBinding              - [class] binding snippet
+aNgClass                   - [ngClass] snippet
+aNgFor                     - *ngFor snippet
+aNgForm                    - ngForm snippet
+aNgIf                      - *ngIf snippet
+aNgModel                   - [(ngModel)] binding snippet
+aRouterLink                - Basic routerLink snippet
+aRouterLinkWithParameter   - [routerLink] with route parameter snippet
+aNgSwitch                  - [ngSwitch] snippet
+aNgStyle                   - [ngStyle] snippet
+aSelect                    - <select> control using *ngFor snipppet
+aStyleBinding              - [style] binding snippet
 
 ```
 
-## Installing the Angular 2 TypeScript and HTML Snippets
+## Installing the Angular TypeScript and HTML Snippets
 
 ```
-Windows:  Select Ctrl+P and then type ext install angular2-snippets
-Mac:      Select ⌘+P and then type ext install angular2-snippets 
+Windows:  Select Ctrl+P and then type ext install angular-typescript-snippets
+Mac:      Select ⌘+P and then type ext install angular-typescript-snippets 
 ```
 
-After restarting the editor open a TypeScript file and type the `a2` prefix to see the snippets.
+After restarting the editor open a TypeScript file and type the `a` prefix to see the snippets.
 
 The following [walk-through](https://code.visualstudio.com/docs/editor/extension-gallery) provides additional details.
 
