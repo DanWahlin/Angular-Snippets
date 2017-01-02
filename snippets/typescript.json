@@ -34,15 +34,15 @@
     "body": [
       "import { NgModule } from '@angular/core';",
       "",
-      "import { ${featureRoutingModuleName} } from './${path}/${fileName}.module';",
-      "",
+      "import { ${featureName}RoutingModule } from './${path}/${fileName}.module';",
+      "$0",
       "@NgModule({",
-      "\timports: [ ${featureRoutingModuleName} ],",
-      "\tdeclarations: [ ${featureRoutingModuleName}.components ],",
+      "\timports: [ ${featureName}RoutingModule ],",
+      "\tdeclarations: [ ${featureName}RoutingModule.components ],",
       "})",
       "export class ${featureName}Module { }"
     ],
-    "description": "Angular app feature module (@NgModule) snippet"
+    "description": "Angular app feature module (@NgModule) snippet with routing module import"
   },
 
   "AppFeatureRoutingModule": {

@@ -1,8 +1,8 @@
 {
     "name": "angular2-snippets",
     "publisher": "danwahlin",
-    "displayName": "Angular 2 and TypeScript/HTML Snippets",
-    "description": "Angular (2 or higher) and TypeScript/HTML Snippets for VS Code",
+    "displayName": "Angular 2 (or higher) and TypeScript/HTML VS Code Snippets",
+    "description": "VS Code snippets for Angular 2 (or higher) and TypeScript/HTML",
     "icon": "images/angularSnippets.png",
     "repository": {
         "type": "git",
@@ -12,7 +12,7 @@
         "color": "#0150B1",
         "theme": "dark"
     },
-    "version": "1.0.9",
+    "version": "1.0.10",
     "engines": { "vscode": "0.10.x" },
     "categories": ["Snippets"],
     "contributes": {
