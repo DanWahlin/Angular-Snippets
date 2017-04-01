@@ -46,6 +46,8 @@ ag-StyleBinding              - [style] binding snippet
 
 ```
 
+In addition to typing the snippet prefix, you can also press Ctrl+Space on Windows or Linux, or Cmd+Space on Mac to activate the snippets.
+
 ## Installing the Angular TypeScript and HTML Snippets
 
 ```
