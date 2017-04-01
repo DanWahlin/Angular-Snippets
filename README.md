@@ -51,11 +51,13 @@ In addition to typing the snippet prefix, you can also press Ctrl+Space on Windo
 ## Installing the Angular TypeScript and HTML Snippets
 
 ```
-Windows:  Select Ctrl+P and then type ext install angular2-snippets
-Mac:      Select ⌘+P and then type ext install angular2-snippets 
+Windows:  Select Ctrl+P and then type: ext install angular2-snippets
+Mac:      Select ⌘+P and then type: ext install angular2-snippets 
 ```
 
-After restarting the editor open a TypeScript file and type the `a` prefix to see the snippets.
+After restarting the editor open a TypeScript file and type the “ag-” prefix to see the snippets.
+
+NOTE: The VS Code extension gallery doesn’t allow projects to be renamed after they are initially created so “angular2-snippets” will get you the latest version of the snippets even though “2” is in the name.
 
 The following [walk-through](https://code.visualstudio.com/docs/editor/extension-gallery) provides additional details.
 
