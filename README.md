@@ -1,6 +1,6 @@
 # Angular VS Code TypeScript and HTML Snippets 
 
-This VS Code extension adds Angular (2 or higher) TypeScript and HTML code snippets into your editor.
+This VS Code extension adds Angular (v2 or higher), TypeScript and HTML code snippets into your editor.
 
 ## How To Use the Snippets
 
@@ -9,40 +9,40 @@ Type one of the snippet names below (or part of it) and then press return.
 ### TypeScript Snippets
 
 ```
-a2Bootstrap                     - Bootstrap snippet
-a2AppModule                     - Create the root app module (@NgModule)
-a2AppFeatureModule              - Angular app feature module (@NgModule) snippet
-a2AppFeatureRoutingModule       - Angular app feature routing module (@NgModule) snippet
-a2CanDeactivateRoutingGuard     - Create a CanDeactivate routing guard
-a2Component                     - Component snippet
-a2HttpImport                    - Http module import snippet
-a2HttpMap                       - Http map() snippet
-a2HttpService                   - Service with Http snippet
-a2InputProperty                 - @Input property snippet
-a2OutputEvent                   - @Output event snippet
-a2Pipe                          - Pipe snippet
-a2Routes                        - Angular routes snippet
-a2Route                         - Route definition snippet
-a2Service                       - Service snippet
-a2Subscribe                     - Observable subscribe snippet
+ag-Bootstrap                     - Bootstrap snippet
+ag-AppModule                     - Create the root app module (@NgModule)
+ag-AppFeatureModule              - Angular app feature module (@NgModule) snippet
+ag-AppFeatureRoutingModule       - Angular app feature routing module (@NgModule) snippet
+ag-CanDeactivateRoutingGuard     - Create a CanDeactivate routing guard
+ag-Component                     - Component snippet
+ag-HttpImport                    - Http module import snippet
+ag-HttpMap                       - Http map() snippet
+ag-HttpService                   - Service with Http snippet
+ag-InputProperty                 - @Input property snippet
+ag-OutputEvent                   - @Output event snippet
+ag-Pipe                          - Pipe snippet
+ag-Routes                        - Angular routes snippet
+ag-Route                         - Route definition snippet
+ag-Service                       - Service snippet
+ag-Subscribe                     - Observable subscribe snippet
 
 ```
 
 ### HTML Snippets
 
 ```
-a2ClassBinding              - [class] binding snippet
-a2NgClass                   - [ngClass] snippet
-a2NgFor                     - *ngFor snippet
-a2NgForm                    - ngForm snippet
-a2NgIf                      - *ngIf snippet
-a2NgModel                   - [(ngModel)] binding snippet
-a2RouterLink                - Basic routerLink snippet
-a2RouterLinkWithParameter   - [routerLink] with route parameter snippet
-a2NgSwitch                  - [ngSwitch] snippet
-a2NgStyle                   - [ngStyle] snippet
-a2Select                    - select control using *ngFor snipppet
-a2StyleBinding              - [style] binding snippet
+ag-ClassBinding              - [class] binding snippet
+ag-NgClass                   - [ngClass] snippet
+ag-NgFor                     - *ngFor snippet
+ag-NgForm                    - ngForm snippet
+ag-NgIf                      - *ngIf snippet
+ag-NgModel                   - [(ngModel)] binding snippet
+ag-RouterLink                - Basic routerLink snippet
+ag-RouterLinkWithParameter   - [routerLink] with route parameter snippet
+ag-NgSwitch                  - [ngSwitch] snippet
+ag-NgStyle                   - [ngStyle] snippet
+ag-Select                    - select control using *ngFor snipppet
+ag-StyleBinding              - [style] binding snippet
 
 ```
 
