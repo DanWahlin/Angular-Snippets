@@ -97,7 +97,6 @@
       "import { Component, OnInit } from '@angular/core';",
       "",
       "@Component({",
-      "\tmoduleId: module.id,",
       "\tselector: '${selector}',",
       "\ttemplateUrl: '${fileName}.component.html'",
       "})",
