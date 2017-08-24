@@ -112,6 +112,7 @@
     ],
     "description": "Angular component snippet"
   }, 
+  
   "CanDeactivateRoutingGuard": {
     "prefix": "ag-CanDeactivateRoutingGuard",
     "body": [
@@ -172,6 +173,26 @@
     "description": "Angular Http service snippet"
   },
   
+  "HttpClientService": {
+    "prefix": "ag-HttpClientService",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { HttpClient } from '@angular/common/http';",
+      "",
+      "import { Observable } from 'rxjs/Observable';",
+      "import 'rxjs/add/operator/map';",
+      "import 'rxjs/add/operator/catch';",
+      "",
+      "@Injectable()",
+      "export class ${ServiceName}Service {",
+      "\t$0",
+      "\tconstructor(private http: HttpClient) { }",
+      "",
+      "}"
+    ],
+    "description": "Angular HttpClient service snippet"
+  },
+
   "Pipe": {
     "prefix": "ag-Pipe",
     "body": [
@@ -198,11 +219,19 @@
     ],
     "description": "Angular Http module import snippet"
   },
+
+  "HttpClientImport": {
+    "prefix": "ag-HttpClientImport",
+    "body": [
+      "import { HttpClient } from '@angular/common/http';"
+    ],
+    "description": "Angular HttpClient module import snippet"
+  },
   
   "HttpMap": {
     "prefix": "ag-HttpMap",
     "body": [
-      "\t\t//ensure imports are included",
+      "\t\t//ensure imports are included and Http is injected",
       "\t\t//import { Http, Response } from '@angular/http';",
       "\t\t//import 'rxjs/add/operator/map';",
       "",
@@ -213,6 +242,22 @@
       "\t\t\t.catch(this.${errorFunction});"
     ],
     "description": "Angular Http map snippet"
+  },
+
+  "HttpClientMap": {
+    "prefix": "ag-HttpClientMap",
+    "body": [
+      "\t\t//ensure imports are included and HttpClient is injected",
+      "\t\t//import { HttpClient } from '@angular/common/http';",
+      "\t\t//import 'rxjs/add/operator/map';",
+      "",
+      "\t\treturn this.http.${function}<${returnType}>(${url})",
+      "\t\t\t.map((data) => {",
+      "\t\t\t\t$0",
+      "\t\t\t})",
+      "\t\t\t.catch(this.${errorFunction});"
+    ],
+    "description": "Angular HttpClient map snippet"
   },
   
   "Subscribe": {
