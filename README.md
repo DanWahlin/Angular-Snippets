@@ -15,9 +15,12 @@ ag-AppFeatureModule              - Angular app feature module (@NgModule) snippe
 ag-AppFeatureRoutingModule       - Angular app feature routing module (@NgModule) snippet
 ag-CanDeactivateRoutingGuard     - Create a CanDeactivate routing guard
 ag-Component                     - Component snippet
-ag-HttpImport                    - Http module import snippet
+ag-HttpImport                    - Http import snippet
+ag-HttpClientImport              - HttpClient import snippet
 ag-HttpMap                       - Http map() snippet
+ag-HttpClientMap                 - HttpClient map() snippet
 ag-HttpService                   - Service with Http snippet
+ag-HttpClientService             - Service with HttpClient snippet
 ag-InputProperty                 - @Input property snippet
 ag-OutputEvent                   - @Output event snippet
 ag-Pipe                          - Pipe snippet
