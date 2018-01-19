@@ -10,18 +10,16 @@ Type one of the snippet names below (or part of it) and then press return.
 
 ```
 ag-Bootstrap                     - Bootstrap snippet
-ag-AppModule                     - Create the root app module (@NgModule)
+ag-AppModule                     - Create the root app module (@NgModule) snippet
 ag-AppFeatureModule              - Angular app feature module (@NgModule) snippet
 ag-AppFeatureRoutingModule       - Angular app feature routing module (@NgModule) snippet
-ag-CanDeactivateRoutingGuard     - Create a CanDeactivate routing guard
+ag-CanActivateRoutingGuard       - Create a CanActivate routing guard snippet
+ag-CanDeactivateRoutingGuard     - Create a CanDeactivate routing guard snippet
 ag-Component                     - Component snippet
-ag-HttpImport                    - Http import snippet
-ag-HttpClientImport              - HttpClient import snippet
-ag-HttpMap                       - Http map() snippet
-ag-HttpClientMap                 - HttpClient map() snippet
 ag-HttpService                   - Service with Http snippet
 ag-HttpClientService             - Service with HttpClient snippet
 ag-InputProperty                 - @Input property snippet
+ag-InputGetSet                   - @Input property with get/set
 ag-OutputEvent                   - @Output event snippet
 ag-Pipe                          - Pipe snippet
 ag-Routes                        - Angular routes snippet

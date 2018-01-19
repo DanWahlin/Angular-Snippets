@@ -38,7 +38,7 @@
       "$0",
       "@NgModule({",
       "\timports: [ ${featureName}RoutingModule ],",
-      "\tdeclarations: [ ${featureName}RoutingModule.components ],",
+      "\tdeclarations: [  ],",
       "})",
       "export class ${featureName}Module { }"
     ],
@@ -59,10 +59,9 @@
       "",
       "@NgModule({",
       "\timports: [ RouterModule.forChild(routes) ],",
-      "\tdeclarations: [ RouterModule ]",
+      "\texports: [ RouterModule ]",
       "})",
       "export class ${featureName}RoutingModule {",
-      "\tstatic components = [ ${featureName}Component ]",
       "}"
     ],
     "description": "Angular app feature routing module (@NgModule with RouterModule import) snippet"
@@ -111,6 +110,28 @@
       "}"
     ],
     "description": "Angular component snippet"
+  }, 
+
+  "CanActivateRoutingGuard": {
+    "prefix": "ag-CanActivateRoutingGuard",
+    "body": [
+      "import { Injectable } from '@angular/core';",
+      "import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
+      "import { Observable } from 'rxjs/Observable';",
+      "",
+      "@Injectable()",
+      "export class CanActivateGuard implements CanActivate {",
+      "",
+      "\tcanActivate(",
+      "\t\troute: ActivatedRouteSnapshot,",
+      "\t\tstate: RouterStateSnapshot",
+      "\t) : Observable<boolean> | Promise<boolean> | boolean {",
+      "\t\t$0",
+      "\t}",
+      "",
+      "}"
+    ],
+    "description": "Angular CanActivate Routing Guard"
   }, 
   
   "CanDeactivateRoutingGuard": {
@@ -170,7 +191,7 @@
       "",
       "}"
     ],
-    "description": "Angular Http service snippet"
+    "description": "Angular Http service snippet (deprecated)"
   },
   
   "HttpClientService": {
@@ -180,8 +201,7 @@
       "import { HttpClient } from '@angular/common/http';",
       "",
       "import { Observable } from 'rxjs/Observable';",
-      "import 'rxjs/add/operator/map';",
-      "import 'rxjs/add/operator/catch';",
+      "import { map, catchError } from 'rxjs/operators;",
       "",
       "@Injectable()",
       "export class ${ServiceName}Service {",
@@ -211,55 +231,7 @@
     ],
     "description": "Angular pipe snippet"
   },
-  
-  "HttpImport": {
-    "prefix": "ag-HttpImport",
-    "body": [
-      "import { Http, Response } from '@angular/http';"
-    ],
-    "description": "Angular Http module import snippet"
-  },
-
-  "HttpClientImport": {
-    "prefix": "ag-HttpClientImport",
-    "body": [
-      "import { HttpClient } from '@angular/common/http';"
-    ],
-    "description": "Angular HttpClient module import snippet"
-  },
-  
-  "HttpMap": {
-    "prefix": "ag-HttpMap",
-    "body": [
-      "\t\t//ensure imports are included and Http is injected",
-      "\t\t//import { Http, Response } from '@angular/http';",
-      "\t\t//import 'rxjs/add/operator/map';",
-      "",
-      "\t\treturn this.http.${function}(${url})",
-      "\t\t\t.map((res: Response) => {",
-      "\t\t\t\treturn res.json();",
-      "\t\t\t})",
-      "\t\t\t.catch(this.${errorFunction});"
-    ],
-    "description": "Angular Http map snippet"
-  },
-
-  "HttpClientMap": {
-    "prefix": "ag-HttpClientMap",
-    "body": [
-      "\t\t//ensure imports are included and HttpClient is injected",
-      "\t\t//import { HttpClient } from '@angular/common/http';",
-      "\t\t//import 'rxjs/add/operator/map';",
-      "",
-      "\t\treturn this.http.${function}<${returnType}>(${url})",
-      "\t\t\t.map((data) => {",
-      "\t\t\t\t$0",
-      "\t\t\t})",
-      "\t\t\t.catch(this.${errorFunction});"
-    ],
-    "description": "Angular HttpClient map snippet"
-  },
-  
+    
   "Subscribe": {
     "prefix": "ag-Subscribe",
     "body": [
@@ -277,6 +249,21 @@
       "@Input() ${propertyName}: ${propertyType};"
     ],
     "description": "Angular @Input property snippet (import Input from @angular/core to use)"
+  },
+
+  "InputGetSet": {
+    "prefix": "ag-InputGetSet",
+    "body": [
+      "private _${propertyName}: ${propertyType};",
+      "@Input() get ${propertyName}() {",
+      "\treturn this._${propertyName};",
+      "}",
+      "",
+      "set ${propertyName}(val: ${propertyType}) { ",
+      "\tthis._${propertyName} = val;",
+      "}"
+    ],
+    "description": "Angular @Input property with get/set snippet (import Input from @angular/core to use)"
   },
   
   "Output": {
