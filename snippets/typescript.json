@@ -243,6 +243,14 @@
     "description": "Angular observable subscribe snippet"
   },
 
+  "Subscription": {
+    "prefix": "ag-Subscription",
+    "body": [
+      "${propertyName}: Subscription;"
+    ],
+    "description": "RxJS subscription property"
+  },
+
   "HttpConcatMap": {
     "prefix": "ag-ConcatMap",
     "body": [
