@@ -26,6 +26,7 @@ ag-Routes                        - Angular routes snippet
 ag-Route                         - Route definition snippet
 ag-Service                       - Service snippet
 ag-Subscribe                     - Observable subscribe snippet
+ag-ConcatMap                     - ConcatMap snippet used to handle multiple observables returned from a service (Http calls or others)
 
 ```
 

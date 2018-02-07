@@ -242,6 +242,22 @@
     ],
     "description": "Angular observable subscribe snippet"
   },
+
+  "HttpConcatMap": {
+    "prefix": "ag-ConcatMap",
+    "body": [
+      "this.${service1Name}.${service11FunctionName}(${service11FunctionParams}).pipe(",
+      "\tconcatMap(",
+        "\t\t${service1FunctionReturnValueName} => this.${service2Name}.${service2FunctionName}(${service2FunctionParams}),",
+        "\t\t(${service1FunctionReturnValueName}, ${service2FunctionReturnValueName}) => ({${service1FunctionReturnValueName}, ${service2FunctionReturnValueName}})",
+      "\t)",
+      ")",
+      ".subscribe(({${service1FunctionReturnValueName}, ${service2FunctionReturnValueName}}) => {",
+      "\t$0",
+      "});"
+    ],
+    "description": "RxJS concatMap snippet for multiple calls to functions that return observables (useful for multiple Http calls or when dealing with multiple observables)"
+  },
   
   "Input": {
     "prefix": "ag-InputProperty",
