@@ -254,9 +254,9 @@
   "HttpConcatMap": {
     "prefix": "ag-ConcatMap",
     "body": [
-      "this.${service1Name}.${service11FunctionName}(${service11FunctionParams}).pipe(",
+      "this.${service1Name}.${service11FunctionName}(${service11FunctionParam}: ${service11FunctionParamType}).pipe(",
       "\tconcatMap(",
-        "\t\t${service1FunctionReturnValueName} => this.${service2Name}.${service2FunctionName}(${service2FunctionParams}),",
+        "\t\t${service1FunctionReturnValueName} => this.${service2Name}.${service2FunctionName}(${service2FunctionParam}: ${service12FunctionParamType}),",
         "\t\t(${service1FunctionReturnValueName}, ${service2FunctionReturnValueName}) => ({${service1FunctionReturnValueName}, ${service2FunctionReturnValueName}})",
       "\t)",
       ")",
