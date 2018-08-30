@@ -1,7 +1,7 @@
 {
     "name": "angular2-snippets",
     "publisher": "danwahlin",
-    "displayName": "Angular 5 and TypeScript/HTML VS Code Snippets",
+    "displayName": "Angular 6 and TypeScript/HTML VS Code Snippets",
     "description": "VS Code snippets for Angular (v2 or higher) and TypeScript/HTML",
     "icon": "images/angularSnippets.png",
     "repository": {
@@ -12,7 +12,7 @@
         "color": "#0150B1",
         "theme": "dark"
     },
-    "version": "1.0.19",
+    "version": "1.0.20",
     "engines": { "vscode": "0.10.x" },
     "categories": ["Snippets"],
     "keywords" : [

@@ -1,17 +1,4 @@
 {
-  "Bootstrap": {
-    "prefix": "ag-Bootstrap",
-    "body": [
-      "import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';",
-      "import { enableProdMode } from '@angular/core';",
-      "import { ${appModuleName} } from './${path}/${fileName}.component';",
-      "",
-      "//enableProdMode(); //Uncomment for production",
-      "platformBrowserDynamic().bootstrapModule((${appModuleName});"
-    ],
-    "description": "Angular bootstrap app module using platformBrowserDynamic snippet"
-  },
-
   "AppModule": {
     "prefix": "ag-AppModule",
     "body": [
@@ -117,7 +104,7 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "",
       "@Injectable()",
       "export class CanActivateGuard implements CanActivate {",
@@ -139,7 +126,7 @@
     "body": [
       "import { Injectable } from '@angular/core';",
       "import { CanDeactivate, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';",
-      "import { Observable } from 'rxjs/Observable';",
+      "import { Observable } from 'rxjs';",
       "",
       "import { ${ComponentToGuard} } from '${filePath}.component';",
       "",
@@ -173,27 +160,7 @@
     ],
     "description": "Angular service snippet"
   },
-
-  "HttpService": {
-    "prefix": "ag-HttpService",
-    "body": [
-      "import { Injectable } from '@angular/core';",
-      "import { Http, Response } from '@angular/http';",
-      "",
-      "import { Observable } from 'rxjs/Observable';",
-      "import 'rxjs/add/operator/map';",
-      "import 'rxjs/add/operator/catch';",
-      "",
-      "@Injectable()",
-      "export class ${ServiceName}Service {",
-      "\t$0",
-      "\tconstructor(private http: Http) { }",
-      "",
-      "}"
-    ],
-    "description": "Angular Http service snippet (deprecated)"
-  },
-  
+ 
   "HttpClientService": {
     "prefix": "ag-HttpClientService",
     "body": [
@@ -223,7 +190,7 @@
       "})",
       "export class ${PipeName}Pipe implements PipeTransform {",
       "",
-      "\ttransform(value: ${valueType}, args: ${argsType}) {",
+      "\ttransform(value: ${valueType}, arg?: ${argType}) {",
       "\t\t$0",
       "\t}",
       "",
@@ -236,7 +203,7 @@
     "prefix": "ag-Subscribe",
     "body": [
       "\t\tthis.${serviceName}.${functionName}",
-      "\t\t\t.subscribe((${paramName}: ${paramType}) => {",
+      "\t\t\t.subscribe(${paramName} => {",
       "\t\t\t\t$0",
       "\t\t});"
     ],
@@ -293,7 +260,7 @@
   "Output": {
     "prefix": "ag-OutputEvent",
     "body": [
-      "@Output() ${eventName}: EventEmitter<${eventDataType}> = new EventEmitter<${eventDataType}>();"
+      "@Output() ${eventName} = new EventEmitter<${eventDataType}>();"
     ],
     "description": "Angular @Output event snippet (import Output and EventEmitter from @angular/core to use)"
   }
