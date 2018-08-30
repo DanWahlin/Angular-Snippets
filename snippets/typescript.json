@@ -237,7 +237,7 @@
   "Input": {
     "prefix": "ag-InputProperty",
     "body": [
-      "@Input() ${propertyName}: ${propertyType};"
+      "@Input() public ${propertyName}: ${propertyType};"
     ],
     "description": "Angular @Input property snippet (import Input from @angular/core to use)"
   },
@@ -246,11 +246,11 @@
     "prefix": "ag-InputGetSet",
     "body": [
       "private _${propertyName}: ${propertyType};",
-      "@Input() get ${propertyName}() {",
+      "@Input() public get ${propertyName}() {",
       "\treturn this._${propertyName};",
       "}",
       "",
-      "set ${propertyName}(val: ${propertyType}) { ",
+      "public set ${propertyName}(val: ${propertyType}) { ",
       "\tthis._${propertyName} = val;",
       "}"
     ],
@@ -260,7 +260,7 @@
   "Output": {
     "prefix": "ag-OutputEvent",
     "body": [
-      "@Output() ${eventName} = new EventEmitter<${eventDataType}>();"
+      "@Output() public ${eventName} = new EventEmitter<${eventDataType}>();"
     ],
     "description": "Angular @Output event snippet (import Output and EventEmitter from @angular/core to use)"
   }
