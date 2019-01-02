@@ -1,6 +1,6 @@
 # Angular, TypeScript and HTML Snippets for VS Code
 
-This VS Code extension adds Angular (v2 or higher), TypeScript and HTML code snippets into your editor.
+This VS Code extension adds Angular, TypeScript and HTML code snippets into your editor.
 
 ## How To Use the Snippets
 
