@@ -1,7 +1,7 @@
 {
     "name": "angular2-snippets",
     "publisher": "danwahlin",
-    "displayName": "Angular 7 and TypeScript/HTML VS Code Snippets",
+    "displayName": "Angular 8 and TypeScript/HTML VS Code Snippets",
     "description": "VS Code snippets for Angular and TypeScript/HTML",
     "icon": "images/angularSnippets.png",
     "repository": {
@@ -12,8 +12,8 @@
         "color": "#0150B1",
         "theme": "dark"
     },
-    "version": "1.0.21",
-    "engines": { "vscode": "0.10.x" },
+    "version": "1.0.22",
+    "engines": { "vscode": "1.0.x" },
     "categories": ["Snippets"],
     "keywords" : [
         "Angular",
