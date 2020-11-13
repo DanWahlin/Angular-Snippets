@@ -60,5 +60,5 @@ After restarting the editor open a TypeScript file and type the “ag-” prefix
 
 NOTE: The VS Code extension gallery doesn’t allow projects to be renamed after they are initially created so “angular2-snippets” will get you the latest version of the snippets even though “2” is in the name.
 
-The following [walk-through](https://code.visualstudio.com/docs/editor/extension-gallery) provides additional details.
+The following [walk-through](https://code.visualstudio.com/docs/editor/extension-gallery?WT.mc_id=m365-0000-dwahlin) provides additional details.
 
